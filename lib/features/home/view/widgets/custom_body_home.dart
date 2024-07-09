@@ -22,12 +22,12 @@ class _CustomBodyHomeState extends State<CustomBodyHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       children: [
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Padding(
+            Padding(
               padding: EdgeInsets.only(left: 20),
               child: Text(
                 "hello 👋",
@@ -38,28 +38,23 @@ class _CustomBodyHomeState extends State<CustomBodyHome> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 20),
-              child: GetBuilder<HomeController>(
-                builder: (controller) => Text(
-                  controller.userName ??
-                      Get.find<PublicController>().name ??
-                      '',
-                  style: const TextStyle(
-                      fontSize: 14, fontWeight: FontWeight.bold),
-                ),
+              padding: EdgeInsets.only(left: 20),
+              child: Text(
+                'Ahmed',
+                style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold),
               ),
             ),
           ],
         ),
-        const SizedBox(width: 200),
-        const Icon(
+        SizedBox(width: 200),
+        Icon(
           Icons.search,
           size: 28,
         ),
-        const SizedBox(
+        SizedBox(
           width: 20,
         ),
-        const Icon(
+        Icon(
           Icons.shopping_cart_outlined,
           size: 28,
         ),
