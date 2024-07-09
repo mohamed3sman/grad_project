@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:get/get.dart';
 import 'package:linkin/config/router/app_pages.dart';
 import 'package:linkin/config/router/app_routes.dart';
+import 'package:linkin/config/utils/public_controller.dart';
 
 void main() {
+  Get.put(PublicController());
   runApp(const MyApp());
 }
 

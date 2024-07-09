@@ -48,4 +48,5 @@ class AssetsData {
   static const call = 'assets/call.jpg';
   static const undrawteaching = 'assets/undraw_teaching_1.png';
   static const undrawno = 'assets/undraw_no.png';
+  static const check = 'assets/check.png';
 }
